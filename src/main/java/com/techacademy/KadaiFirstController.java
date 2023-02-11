@@ -28,10 +28,10 @@ public class KadaiFirstController {
     }
 
     @GetMapping("/plus/{val1}/{val2}")
-        public String calcPlus(@PathVariable String val1, @PathVariable String val2) {
-            String str = "";
-            str = val1 + val2;
-            return str;
+        public int calcPlus(@PathVariable int val1, @PathVariable int val2) {
+            int num = 0;
+            num = val1 + val2;
+            return num;
         }
 
     @GetMapping("/minus/{num1}/{num2}")
